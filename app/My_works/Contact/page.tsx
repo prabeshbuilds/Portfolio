@@ -117,12 +117,12 @@ export default function Contact() {
         <div className="grid grid-cols-3 gap-3">
           <div className="bg-white border border-gray-200 rounded-xl p-4 text-center">
             <p className="text-xs font-medium text-gray-900 mb-1">Email</p>
-            <p className="text-xs text-gray-500">hello@yourname.com</p>
+            <p className="text-xs text-gray-500">prabeshuser407@gmail.com</p>
           </div>
 
           <div className="bg-white border border-gray-200 rounded-xl p-4 text-center">
             <p className="text-xs font-medium text-gray-900 mb-1">Location</p>
-            <p className="text-xs text-gray-500">Kathmandu, Nepal</p>
+            <p className="text-xs text-gray-500">Chitwan, Nepal</p>
           </div>
 
           <div className="bg-white border border-gray-200 rounded-xl p-4 text-center">

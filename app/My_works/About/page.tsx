@@ -2,45 +2,49 @@
 "use client";
 
 const skills = [
+
+
+  { name: "Linux", color: "#e5c432" },
+  { name: "Bash", color: "#000000" },
   { name: "Kubernetes", color: "#326CE5" },
   { name: "AWS",        color: "#FF9900" },
   { name: "Terraform",  color: "#7B42BC" },
   { name: "Docker",     color: "#2496ED" },
-  { name: "GitLab CI",  color: "#E24329" },
-  { name: "Helm",       color: "#0F1689" },
-  { name: "ArgoCD",     color: "#40AEF0" },
+  { name: "Nginx",  color: "#E24329" },
+  { name: "Grafana",       color: "#48ff00" },
+  { name: "Nexus",  color: "#E24329" },
   { name: "Git",        color: "#F05032" },
-  { name: "GCP",        color: "#4285F4" },
-  { name: "Azure",      color: "#0089D6" },
+  { name: "Ansible",        color: "#4285F4" },
+  { name: "Jenkins",      color: "#0089D6" },
 ];
 
 const stats = [
   { num: "99.9%", label: "Uptime delivered" },
-  { num: "40+",   label: "Pipelines built"  },
+  { num: "10+",   label: "Pipelines built"  },
   { num: "3×",    label: "Faster deploys"   },
-  { num: "5 yrs", label: "Cloud experience" },
+  { num: "1 yrs", label: "Cloud experience" },
 ];
 
 const timeline = [
   {
-    role: "Senior DevOps Engineer",
-    company: "Acme Cloud Solutions",
-    period: "2022 — Present",
-    desc: "Led Kubernetes migration for 20+ microservices, reduced deploy time by 3×.",
+    role: "Freelancing DevOps Engineer",
+    company: "Acme IT",
+    period: "2025 — Present",
+    desc: "Led Kubernetes migration for 5+ microservices, reduced deploy time by 3×.",
     current: true,
   },
   {
-    role: "Cloud Engineer",
-    company: "TechNova Pvt Ltd",
+    role: "WordPress Plugin Tester",
+    company: "Acme IT",
     period: "2020 — 2022",
-    desc: "Built AWS infrastructure with Terraform, maintained 99.9% uptime SLA.",
+    desc: "Test WordPress plugins for compatibility and security, ensuring high-quality releases.",
     current: false,
   },
   {
-    role: "Junior DevOps Engineer",
-    company: "Startup Hub Nepal",
-    period: "2019 — 2020",
-    desc: "Set up CI/CD pipelines with GitLab CI, containerized legacy apps with Docker.",
+    role: "Graphics Designer",
+    company: "Freelance",
+    period: "2019 — 2026",
+    desc: "Designed logos, banners, and marketing materials for various clients, delivering visually appealing solutions.",
     current: false,
   },
 ];
@@ -66,7 +70,7 @@ const values = [
 const certs = [
   { title: "AWS Certified Solutions Architect", issuer: "Amazon Web Services", year: "2023" },
   { title: "Certified Kubernetes Administrator (CKA)", issuer: "CNCF", year: "2022" },
-  { title: "B.E. Computer Engineering", issuer: "Tribhuvan University, Kathmandu", year: "2019" },
+  { title: "BCA", issuer: "Tribhuvan University, Kathmandu", year: "2022-Running" },
 ];
 
 export default function About() {

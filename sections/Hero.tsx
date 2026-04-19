@@ -16,6 +16,7 @@ const commands = [
 ];
 
 const stack = [
+  { name: "Linux", color: "#e5c432" },
   { name: "Kubernetes", color: "#326CE5" },
   { name: "AWS",        color: "#FF9900" },
   { name: "Terraform",  color: "#7B42BC" },
@@ -34,7 +35,7 @@ const stats = [
   { num: "99.9%", label: "Uptime delivered" },
   { num: "40+",   label: "Pipelines built"  },
   { num: "3×",    label: "Faster deploys"   },
-  { num: "5 yrs", label: "Cloud experience" },
+  { num: "1yrs", label: "Cloud experience" },
 ];
 
 export default function Hero() {
