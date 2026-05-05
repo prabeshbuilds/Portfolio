@@ -5,6 +5,7 @@ import Link from "next/link";
 
 
 const commands = [
+  "Here is a glimpse of my command line skills:",
   "kubectl get pods --all-namespaces",
   "terraform apply --auto-approve",
   "docker build -t app:latest .",
@@ -17,6 +18,7 @@ const commands = [
 
 const stack = [
   { name: "Linux", color: "#e5c432" },
+  { name: "Python", color: "#02005c" },
   { name: "Kubernetes", color: "#326CE5" },
   { name: "AWS",        color: "#FF9900" },
   { name: "Terraform",  color: "#7B42BC" },
@@ -25,9 +27,10 @@ const stack = [
   { name: "Ansible",       color: "#0F1689" },
   { name: "Jenkins",     color: "#40AEF0" },
   { name: "Git",        color: "#F05032" },
-  { name: "Ngrok",        color: "#F05032" },
+  { name: "Ngrok",        color: "#070c1d" },
   { name: "Postman",        color: "#F05032" },
-  { name: "Nginx",        color: "#F05032" },
+  { name: "Nginx",        color: "#e4ba00" },
+  { name: "Jira",        color: "#0089e4" },
 
 ];
 
@@ -79,7 +82,7 @@ export default function Hero() {
         {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
         <span className="w-1.5 h-1.5 rounded-full bg-green-500" aria-label="Online status" />
         {" "}
-        Open to new opportunities
+        Open to DevOps Engineering opportunities
       </div>
 
       {/* Headline */}

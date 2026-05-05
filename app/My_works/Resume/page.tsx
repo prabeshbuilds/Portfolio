@@ -1,36 +1,38 @@
 // components/Resume.tsx
 "use client";
 
+import { degrees } from "framer-motion";
+
 const contact = {
-  name: "Your Name",
-  title: "DevOps & Cloud Engineer",
-  email: "your.email@example.com",
-  phone: "+1 (555) 123-4567",
+  name: "Prabesh Khatiwada",
+  title: "Backend Developer & DevOps Engineer",
+  email: "Prabeshuser407@gmail.com",
+  phone: "9866651052",
   location: "Kathmandu, Nepal",
-  linkedin: "linkedin.com/in/yourprofile",
-  github: "github.com/yourusername",
+  linkedin: "https://www.linkedin.com/in/prabesh-khatiwada-13638a257/",
+  github: "https://github.com/prabeshbuilds",
 };
 
-const summary = "DevOps & Cloud Engineer with 5+ years of experience designing and operating cloud-native infrastructure. Specializing in CI/CD automation, container orchestration, and infrastructure as code — turning complex deployments into reliable, repeatable workflows.";
+const summary = "DevOps & Cloud Engineer with 1+ years of experience designing and operating cloud-native infrastructure. Specializing in CI/CD automation, container orchestration, and infrastructure as code — turning complex deployments into reliable, repeatable workflows.";
 
 const experience = [
   {
-    role: "Senior DevOps Engineer",
+    role: "DevOps Engineer",
     company: "Acme Cloud Solutions",
-    period: "2022 — Present",
-    desc: "Led Kubernetes migration for 20+ microservices, reduced deploy time by 3×. Implemented GitOps with ArgoCD, automated CI/CD pipelines with GitLab CI, and maintained 99.9% uptime SLA.",
+    period: "2026 — Present",
+    desc: "Design and maintain scalable cloud infrastructure on AWS using Terraform and Kubernetes. Implement CI/CD pipelines with jen, reducing deployment times by 40%. Collaborate with development teams to optimize application performance and reliability.",
   },
   {
-    role: "Cloud Engineer",
-    company: "TechNova Pvt Ltd",
-    period: "2020 — 2022",
-    desc: "Built AWS infrastructure with Terraform, set up monitoring with Prometheus/Grafana, and containerized applications with Docker. Reduced operational overhead by 40%.",
+    role: "WordpressPlugin tester",
+    company: "Acmeit",
+    period: "2025 — Present",
+    desc: " Conducted comprehensive testing of WordPress plugins, ensuring compatibility across versions and adherence to best practices. Collaborated with developers to identify and resolve issues, contributing to improved plugin performance and user experience.",
   },
   {
-    role: "Junior DevOps Engineer",
-    company: "Startup Hub Nepal",
-    period: "2019 — 2020",
-    desc: "Set up CI/CD pipelines with GitLab CI, containerized legacy apps with Docker, and managed cloud deployments on AWS. Improved deployment frequency from weekly to daily.",
+    role: "Freelancing Designer",
+    company: "Self-employed",
+    period: "2019 Onwards",
+    desc: "Designed logos, branding materials, and digital assets for local businesses and startups. Delivered 50+ projects with a focus on clean, modern aesthetics.",
   },
 ];
 
@@ -40,6 +42,7 @@ const skills = [
 ];
 
 const education = [
+  {degree: "+2 Science", institution: "Nepal Higher Seconday School, Chitwan", year: "2020"},
   { degree: "B.E. Computer Engineering", institution: "Tribhuvan University, Kathmandu", year: "2019" },
 ];
 

@@ -263,6 +263,7 @@ export default function Header() {
     { label: "Projects", href: isHomePage ? "/My_works/Project"  : "/My_works/Project", key: "/My_works/Project" },
     { label: "Contact",  href: isHomePage ? "/My_works/Contact"  : "/My_works/Contact", key: "/My_works/Contact" },
     { label: "About",    href: isHomePage ? "/My_works/About"    : "/My_works/About",    key: "/My_works/About" },
+    { label: "Community", href: isHomePage ? "/My_works/Community" : "/My_works/Community", key: "/My_works/Community" },
 
   ];
 

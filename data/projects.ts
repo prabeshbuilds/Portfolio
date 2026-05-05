@@ -13,19 +13,19 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    title: "GitOps CI/CD Platform",
-    description:
-      "End-to-end GitOps pipeline using ArgoCD, GitHub Actions, and Helm. Zero-downtime deployments with automated rollback on failure.",
-    tags: ["ArgoCD", "GitHub Actions", "Helm", "K8s"],
-    category: "devops",
-    status: "live",
-    statusLabel: "Live · 99.98% uptime",
-    featured: true,
-    accentColor: "bg-blue-50",
-    demoUrl: "#",
-    repoUrl: "#",
-  },
+ {
+  title: "Django CI/CD Pipeline",
+  description:
+    "Automated CI/CD pipeline for Django applications using GitHub Actions, Docker, and Nginx. Includes automated testing, build, and zero-downtime deployment to production.",
+  tags: ["Django", "Jenkins", "Docker", "Nginx", "CI/CD"],
+  category: "devops",
+  status: "live",
+  statusLabel: "Live · Stable deployments",
+  featured: true,
+  accentColor: "bg-green-50",
+  demoUrl: "#",
+  repoUrl: "#",
+},
   {
     title: "AWS Multi-region IaC",
     description:
@@ -38,49 +38,49 @@ export const projects: Project[] = [
     repoUrl: "#",
   },
   {
-    title: "Kubernetes cost optimizer",
-    description:
-      "Automated pod right-sizing and node autoscaling that reduced cloud spend by 38% across a 200-node EKS cluster.",
-    tags: ["Kubernetes", "AWS EKS", "Python"],
-    category: "cloud",
-    status: "live",
-    statusLabel: "Saved $14k/mo",
-    accentColor: "bg-teal-50",
-    repoUrl: "#",
-  },
+  title: "Node.js Application Deployment on Kubernetes (3-Node Cluster)",
+  description:
+    "Deployed and orchestrated a Node.js application on a 3-node Kubernetes cluster with automated scaling, rolling updates, and self-healing. Includes Ingress routing, ConfigMaps, Secrets management, and horizontal pod autoscaling for high availability and fault tolerance.",
+  tags: ["Kubernetes", "Node.js", "Docker", "AWS EKS", "HPA", "CI/CD"],
+  category: "cloud",
+  status: "live",
+  statusLabel: "Live · Multi-node production cluster",
+  accentColor: "bg-blue-50",
+  repoUrl: "#",
+},
+ {
+  title: "Ansible Incident Automation & Runbook Orchestration",
+  description:
+    "Automated incident response system built with Ansible to execute runbooks across multiple servers. Integrates with Slack and PagerDuty to triage alerts, trigger remediation playbooks, restart services, collect logs, and auto-create Jira tickets, reducing MTTR significantly.",
+  tags: ["Ansible", "Slack API", "PagerDuty", "Jira", "Automation", "DevOps"],
+  category: "automation",
+  status: "live",
+  statusLabel: "Active · Incident response automation",
+  accentColor: "bg-amber-50",
+  demoUrl: "#",
+  repoUrl: "#",
+},
   {
-    title: "Incident automation bot",
-    description:
-      "Slack bot that auto-triages PagerDuty alerts, creates Jira tickets, and runs runbooks. Reduced MTTR by 60%.",
-    tags: ["Python", "Slack API", "PagerDuty"],
-    category: "automation",
-    status: "live",
-    statusLabel: "In use · 12 teams",
-    accentColor: "bg-amber-50",
-    demoUrl: "#",
-    repoUrl: "#",
-  },
-  {
-    title: "Security scanning pipeline",
-    description:
-      "Unified Docker image scanning with Trivy, Snyk, and OWASP ZAP — Slack notifications and SBOM export included.",
-    tags: ["Trivy", "Snyk", "Docker", "CI"],
-    category: "devops",
-    status: "live",
-    statusLabel: "Active · 0 CVEs shipped",
-    accentColor: "bg-red-50",
-    repoUrl: "#",
-  },
-  {
-    title: "Observability stack",
-    description:
-      "Full observability platform with Prometheus, Grafana, Loki, and Tempo. Unified dashboards for metrics, logs, and traces.",
-    tags: ["Prometheus", "Grafana", "Loki", "Tempo"],
-    category: "automation",
-    status: "live",
-    statusLabel: "Live · 500+ dashboards",
-    accentColor: "bg-gray-50",
-    demoUrl: "#",
-    repoUrl: "#",
-  },
+  title: "Node.js DevOps Pipeline with SonarQube",
+  description:
+    "End-to-end DevOps pipeline for a Node.js application featuring CI/CD automation, SonarQube code quality analysis, unit testing, and Docker-based deployment. Ensures code quality gates, security checks, and maintainable production releases.",
+  tags: ["Node.js", "SonarQube", "CI/CD", "Docker", "Jenkins", "Testing"],
+  category: "devops",
+  status: "live",
+  statusLabel: "Quality gated · SonarQube verified",
+  accentColor: "bg-blue-50",
+  repoUrl: "#",
+},
+{
+  title: "Ansible Multi-Node Automation for Django & Node.js",
+  description:
+    "Infrastructure automation using Ansible to provision and configure multiple Ubuntu servers. Automatically deploys Django and Node.js applications across different nodes with Nginx setup, system dependencies, security hardening, and zero-touch provisioning.",
+  tags: ["Ansible", "Django", "Node.js", "Ubuntu", "Nginx", "Automation"],
+  category: "automation",
+  status: "live",
+  statusLabel: "Live · Multi-node orchestration",
+  accentColor: "bg-green-50",
+  demoUrl: "#",
+  repoUrl: "#",
+}
 ];
