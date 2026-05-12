@@ -7,15 +7,18 @@ const skills = [
   { name: "Linux", color: "#e5c432" },
   { name: "Bash", color: "#000000" },
   { name: "Kubernetes", color: "#326CE5" },
-  { name: "AWS",        color: "#FF9900" },
-  { name: "Terraform",  color: "#7B42BC" },
-  { name: "Docker",     color: "#2496ED" },
+  { name: "AWS", color: "#FF9900" },
+  { name: "Terraform", color: "#7B42BC" },
+  { name: "Docker", color: "#2496ED" },
   { name: "Nginx",  color: "#E24329" },
-  { name: "Grafana",       color: "#48ff00" },
+  { name: "Grafana",  color: "#48ff00" },
   { name: "Nexus",  color: "#E24329" },
-  { name: "Git",        color: "#F05032" },
-  { name: "Ansible",        color: "#4285F4" },
-  { name: "Jenkins",      color: "#0089D6" },
+  { name: "Git",  color: "#F05032" },
+  { name: "Ansible", color: "#4285F4" },
+  { name: "Jenkins", color: "#d6c800" },
+  { name: "postman",  color: "#ff3604" },
+  { name: "Ngrok",  color: "#a089e0" },
+  { name: "Sonarqube", color: "#0089D6" },
 ];
 
 const stats = [
@@ -115,15 +118,13 @@ export default function About() {
             </h2>
 
             <p className="text-sm text-gray-500 leading-relaxed mb-3">
-              I&apos;m a DevOps and Cloud Engineer with 5+ years of experience designing and
+              I&apos;m a DevOps and Cloud Engineer with 1+ years of experience designing and
               operating cloud-native infrastructure. I specialize in CI/CD automation, container
               orchestration, and infrastructure as code — turning complex deployments into
               reliable, repeatable workflows.
             </p>
             <p className="text-sm text-gray-500 leading-relaxed">
-              Based in Kathmandu, I&apos;ve worked across fast-moving teams to deliver
-              high-availability systems on AWS, streamline release cycles, and reduce operational
-              overhead through thoughtful automation.
+              I have 1.5 years of continuous hands-on experience working with Linux across different distributions. During this time, I have become familiar with core system administration tasks, command-line operations, file system management, process handling, and basic networking concepts. I regularly work with Linux environments for server management, troubleshooting, and automation tasks, which has strengthened my understanding of how production systems operate. This experience has helped me build confidence in working efficiently in terminal-based environments and managing Linux-based infrastructure in real-world scenarios.
             </p>
           </div>
 

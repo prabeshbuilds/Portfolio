@@ -18,7 +18,7 @@ const summary = "DevOps & Cloud Engineer with 1+ years of experience designing a
 const experience = [
   {
     role: "DevOps Engineer",
-    company: "Acme Cloud Solutions",
+    company: "Acme it",
     period: "2026 — Present",
     desc: "Design and maintain scalable cloud infrastructure on AWS using Terraform and Kubernetes. Implement CI/CD pipelines with jen, reducing deployment times by 40%. Collaborate with development teams to optimize application performance and reliability.",
   },
