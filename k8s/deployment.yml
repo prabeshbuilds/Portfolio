@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: nextjs-portfolio
-          image: prabeshdevops/nextjs-portfolio:v1
+          image: prabeshdevops/nextjs-portfolio:v5
           ports:
             - containerPort: 3000
