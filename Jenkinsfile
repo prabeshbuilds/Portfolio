@@ -34,6 +34,7 @@ pipeline {
                 '''
             }
         }
+
         stage('Docker Login') {
             steps {
                 withCredentials([usernamePassword(
@@ -42,7 +43,10 @@ pipeline {
                     passwordVariable: 'DOCKER_PASS'
                 )]) {
 
-                    sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
+                    sh '''
+                    echo $DOCKER_PASS | docker login \
+                    -u $DOCKER_USER --password-stdin
+                    '''
                 }
             }
         }
@@ -61,6 +65,16 @@ pipeline {
                 sh '''
                 kubectl apply -f k8s/
                 kubectl rollout restart deployment nextjs-portfolio
+                kubectl rollout status deployment/nextjs-portfolio
+                '''
+            }
+        }
+
+        stage('Cleanup') {
+            steps {
+                sh '''
+                docker rmi $IMAGE_NAME:$BUILD_NUMBER || true
+                docker rmi $IMAGE_NAME:latest || true
                 '''
             }
         }
