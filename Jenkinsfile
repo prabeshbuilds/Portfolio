@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "prabeshbuilds/portfolio"
+        IMAGE_NAME = " prabeshdevops/nextjs-portfolio"
     }
 
     stages {
