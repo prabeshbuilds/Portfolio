@@ -60,7 +60,7 @@ pipeline {
             steps {
                 sh '''
                 kubectl apply -f k8s/
-                kubectl rollout restart deployment portfolio
+                kubectl rollout restart deployment nextjs-portfolio
                 '''
             }
         }
