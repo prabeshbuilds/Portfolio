@@ -2,10 +2,17 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = " prabeshdevops/nextjs-portfolio"
+        IMAGE_NAME = "prabeshdevops/nextjs-portfolio"
+        KUBECONFIG = "/var/lib/jenkins/.kube/config"
     }
 
     stages {
+
+        stage('Clean Workspace') {
+            steps {
+                cleanWs()
+            }
+        }
 
         stage('Clone Repo') {
             steps {
@@ -16,7 +23,7 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                sh 'npm ci'
             }
         }
 
@@ -42,10 +49,8 @@ pipeline {
                     usernameVariable: 'DOCKER_USER',
                     passwordVariable: 'DOCKER_PASS'
                 )]) {
-
                     sh '''
-                    echo $DOCKER_PASS | docker login \
-                    -u $DOCKER_USER --password-stdin
+                    echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
                     '''
                 }
             }
@@ -63,12 +68,14 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 sh '''
-                export KUBECONFIG=/var/lib/jenkins/.kube/config
-                kubectl apply -f k8s/
+                kubectl apply -f deployment.yaml
+                kubectl apply -f service.yaml
+                kubectl rollout restart deployment nextjs-portfolio
                 kubectl rollout status deployment/nextjs-portfolio
                 '''
             }
         }
+
         stage('Cleanup') {
             steps {
                 sh '''
