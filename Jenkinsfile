@@ -1,10 +1,16 @@
 pipeline {
     agent any
 
+    environment {
+        IMAGE_NAME = "prabeshbuilds/portfolio"
+    }
+
     stages {
+
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/prabeshbuilds/Portfolio.git'
+                git branch: 'main',
+                    url: 'https://github.com/prabeshbuilds/Portfolio.git'
             }
         }
 
@@ -22,16 +28,13 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                sh 'docker build -t nextjs-portfolio .'
+                sh 'docker build -t $IMAGE_NAME:$BUILD_NUMBER .'
             }
         }
 
         stage('Push Image') {
             steps {
-                sh '''
-                docker tag nextjs-portfolio prabeshdevops/nextjs-portfolio:v1
-                docker push prabeshdevops/nextjs-portfolio:v1
-                '''
+                sh 'docker push $IMAGE_NAME:$BUILD_NUMBER'
             }
         }
 
