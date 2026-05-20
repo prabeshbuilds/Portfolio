@@ -63,13 +63,12 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 sh '''
+                export KUBECONFIG=/var/lib/jenkins/.kube/config
                 kubectl apply -f k8s/
-                kubectl rollout restart deployment nextjs-portfolio
                 kubectl rollout status deployment/nextjs-portfolio
                 '''
             }
         }
-
         stage('Cleanup') {
             steps {
                 sh '''
