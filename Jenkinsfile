@@ -28,7 +28,10 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                sh 'docker build -t $IMAGE_NAME:$BUILD_NUMBER .'
+                sh '''
+                docker build -t $IMAGE_NAME:$BUILD_NUMBER .
+                docker tag $IMAGE_NAME:$BUILD_NUMBER $IMAGE_NAME:latest
+                '''
             }
         }
         stage('Docker Login') {
@@ -46,13 +49,19 @@ pipeline {
 
         stage('Push Image') {
             steps {
-                sh 'docker push $IMAGE_NAME:$BUILD_NUMBER'
+                sh '''
+                docker push $IMAGE_NAME:$BUILD_NUMBER
+                docker push $IMAGE_NAME:latest
+                '''
             }
         }
 
         stage('Deploy to Kubernetes') {
             steps {
-                sh 'kubectl apply -f k8s/'
+                sh '''
+                kubectl apply -f k8s/
+                kubectl rollout restart deployment portfolio
+                '''
             }
         }
     }
