@@ -92,11 +92,10 @@ export default function Hero() {
       </h1>
 
       {/* Subheading */}
-      <p className="relative text-gray-500 max-w-lg text-base leading-relaxed mb-6">
-        DevOps &amp; Cloud Engineer specializing in CI/CD pipelines, container
-        orchestration, and infrastructure as code. I turn complex deployments
-        into repeatable, automated workflows.
-      </p>
+    <p className="relative text-gray-500 max-w-lg text-base leading-relaxed mb-6">
+      DevOps & Cloud Engineer focused on CI/CD pipelines, containers, and cloud infrastructure.
+      I build simple and automated systems to deploy applications faster and more reliably.
+    </p>
 
       {/* Animated terminal */}
       <div className="relative flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-xl px-4 py-2.5 font-mono text-xs text-gray-500 mb-6 max-w-sm w-full">

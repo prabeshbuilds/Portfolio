@@ -37,18 +37,18 @@ const experience = [
 ];
 
 const skills = [
-  "Kubernetes", "AWS", "Terraform", "Docker", "GitLab CI", "Helm", "ArgoCD", "Git", "GCP", "Azure",
+  "Kubernetes", "AWS", "Terraform", "Docker", "GitLab CI", "Helm", "ArgoCD", "Git",
   "Python", "Bash", "Jenkins", "Prometheus", "Grafana", "Ansible", "Linux", "Networking"
 ];
 
 const education = [
   {degree: "+2 Science", institution: "Nepal Higher Seconday School, Chitwan", year: "2020"},
-  { degree: "B.E. Computer Engineering", institution: "Tribhuvan University, Kathmandu", year: "2019" },
+  { degree: "BCA :- Bachelor in Computer Application", institution: "Tribhuvan University, Kathmandu", year: "2019" },
 ];
 
 const certifications = [
-  { title: "AWS Certified Solutions Architect", issuer: "Amazon Web Services", year: "2023" },
-  { title: "Certified Kubernetes Administrator (CKA)", issuer: "CNCF", year: "2022" },
+  { title: "AWS Certified Solutions Architect Preparing ", issuer: "Amazon Web Services", year: "Present-2026" },
+  { title: "Certified Kubernetes Administrator (CKA) Preparing ", issuer: "CNCF", year: "Present-2026" },
 ];
 
 export default function Resume() {

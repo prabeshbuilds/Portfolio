@@ -26,17 +26,27 @@ export const projects: Project[] = [
   demoUrl: "#",
   repoUrl: "https://github.com/prabeshbuilds/Student_ManagementSystem-Devops",
 },
-  {
-    title: "AWS Multi-region IaC",
-    description:
-      "Provisioned AWS infrastructure using Terraform, including VPC, public subnet, route table, internet gateway, and EC2 instances. Automated infrastructure deployment and configured secure CLI connectivity to AWS resources using Terraform and AWS CL",
-    tags: ["Terraform", "AWS", "EC2","VPC", "Subnet", "EKS"],
-    category: "iac",
-    status: "live",
-    statusLabel: "Production · 3 regions",
-    accentColor: "bg-purple-50",
-    repoUrl: "https://github.com/prabeshbuilds/terraform-aws-vpc-ec2",
-  },
+{
+  title: "AWS Multi-Region Infrastructure with Terraform",
+  description:
+    "Provisioned scalable AWS infrastructure using Terraform across multiple regions. The setup includes VPC, public and private subnets, route tables, internet gateway, load balancer, EC2 instances, and auto scaling groups. This project demonstrates Infrastructure as Code (IaC) practices for highly available, fault-tolerant, and production-ready cloud architecture on AWS.",
+  tags: [
+    "Terraform",
+    "AWS",
+    "EC2",
+    "VPC",
+    "Subnet",
+    "Load Balancer",
+    "Auto Scaling",
+    "Route Table",
+    "Internet Gateway"
+  ],
+  category: "iac",
+  status: "live",
+  statusLabel: "Production · Multi-region HA",
+  accentColor: "bg-purple-50",
+  repoUrl: "https://github.com/prabeshbuilds/terraform-aws-vpc-ec2",
+},
   {
   title: "Node.js Application Deployment on Kubernetes (3-Node Cluster)",
   description:
@@ -61,15 +71,24 @@ export const projects: Project[] = [
   repoUrl: "https://github.com/prabeshbuilds/Anisible-Devops-Setup-on-Server",
 },
   {
-  title: "Node.js DevOps Pipeline with SonarQube",
-  description:
-    "End-to-end DevOps pipeline for a Node.js application featuring CI/CD automation, SonarQube code quality analysis, unit testing, and Docker-based deployment. Ensures code quality gates, security checks, and maintainable production releases.",
-  tags: ["Node.js", "SonarQube", "CI/CD", "Docker", "Jenkins", "Testing"],
-  category: "devops",
-  status: "live",
-  statusLabel: "Quality gated · SonarQube verified",
-  accentColor: "bg-blue-50",
-  repoUrl: "https://github.com/prabeshbuilds/QuickCart_Project",
+ title: "QuickCart – Next.js DevOps CI/CD Pipeline with Monitoring",
+description:
+  "QuickCart is a full-stack e-commerce application built with Next.js and deployed using a complete DevOps CI/CD pipeline. It integrates Jenkins for automation, SonarQube for code quality analysis, and Docker for containerized deployments. The system also includes Grafana-based monitoring to track application uptime, CPU usage, and system performance in real time, ensuring production-ready reliability and maintainability.",
+tags: [
+  "Next.js",
+  "DevOps",
+  "CI/CD",
+  "Jenkins",
+  "SonarQube",
+  "Docker",
+  "Grafana",
+  "Monitoring"
+],
+category: "devops",
+status: "live",
+statusLabel: "Production Ready · CI/CD + Monitoring Enabled",
+accentColor: "bg-blue-50",
+repoUrl: "https://github.com/prabeshbuilds/QuickCart_Project",
 },
 {
   title: "Monitoring the Node.js Application with Prometheus & Grafana",
