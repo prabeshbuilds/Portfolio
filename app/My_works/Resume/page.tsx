@@ -20,7 +20,7 @@ const experience = [
     role: "DevOps Engineer",
     company: "Acme it",
     period: "2026 — Present",
-    desc: "Design and maintain scalable cloud infrastructure on AWS using Terraform and Kubernetes. Implement CI/CD pipelines with jen, reducing deployment times by 40%. Collaborate with development teams to optimize application performance and reliability.",
+    desc: "Design and maintain scalable cloud infrastructure on AWS using Terraform and Kubernetes. Implement CI/CD pipelines with jenkins, reducing deployment times by 40%. Collaborate with development teams to optimize application performance and reliability.",
   },
   {
     role: "WordpressPlugin tester",

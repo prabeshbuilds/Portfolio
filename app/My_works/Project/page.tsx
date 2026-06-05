@@ -12,6 +12,8 @@ const FILTERS = [
   { label: "IaC",        value: "iac"        },
 ] as const;
 
+type FilterValue = (typeof FILTERS)[number]["value"];
+
 const statusColor: Record<Project["status"], string> = {
   live:     "bg-green-500",
   wip:      "bg-amber-400",
@@ -19,7 +21,12 @@ const statusColor: Record<Project["status"], string> = {
 };
 
 export default function Projects() {
-  const [active, setActive] = useState("all");
+  const [active, setActive] = useState<FilterValue>("all");
+
+  const getFilterCount = (value: FilterValue) =>
+    value === "all"
+      ? projects.length
+      : projects.filter((project) => project.category === value).length;
 
   const filtered = projects.filter(
     (p) => active === "all" || p.category === active
@@ -42,7 +49,7 @@ export default function Projects() {
         <p className="text-xs tracking-widest text-gray-400 uppercase mb-2">
           Portfolio
         </p>
-        <h2 className="text-3xl font-bold mb-3">Things I've built</h2>
+        <h2 className="text-3xl font-bold mb-3">Things I&apos;ve built</h2>
         <p className="text-gray-500 max-w-md mx-auto text-sm leading-relaxed">
           DevOps, cloud infrastructure, and automation projects — from CI/CD
           pipelines to Kubernetes deployments.
@@ -54,24 +61,24 @@ export default function Projects() {
         {FILTERS.map((f) => (
           <button
             key={f.value}
+            type="button"
+            aria-pressed={active === f.value}
             onClick={() => setActive(f.value)}
-            className={`text-xs px-4 py-1.5 rounded-full border transition-colors ${
+            className={`cursor-pointer text-xs px-4 py-1.5 rounded-full border transition-colors focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 ${
               active === f.value
                 ? "bg-black text-white border-black"
                 : "border-gray-200 text-gray-500 hover:bg-gray-50"
             }`}
           >
             {f.label}
-            {f.value === "all" && (
-              <span className="ml-1.5 opacity-50">{projects.length}</span>
-            )}
+            <span className="ml-1.5 opacity-50">{getFilterCount(f.value)}</span>
           </button>
         ))}
       </div>
 
       {/* Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
-        {filtered.map((p, i) => (
+        {filtered.map((p) => (
           <div
             key={p.title}
             className={`flex flex-col rounded-xl overflow-hidden border transition-colors hover:border-gray-300 ${
