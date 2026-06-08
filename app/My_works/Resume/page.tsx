@@ -13,7 +13,7 @@ const contact = {
   github: "https://github.com/prabeshbuilds",
 };
 
-const summary = "DevOps & Cloud Engineer with 1+ years of experience designing and operating cloud-native infrastructure. Specializing in CI/CD automation, container orchestration, and infrastructure as code — turning complex deployments into reliable, repeatable workflows.";
+const summary = "DevOps & Cloud Engineer with 1+ years of experience designing and operating cloud-native infrastructure. Specializing in CI/CD automation, container orchestration, and infrastructure as code  turning complex deployments into reliable, repeatable workflows.";
 
 const experience = [
   {
@@ -47,8 +47,8 @@ const education = [
 ];
 
 const certifications = [
-  { title: "AWS Certified Solutions Architect Preparing ", issuer: "Amazon Web Services", year: "Present-2026" },
-  { title: "Certified Kubernetes Administrator (CKA) Preparing ", issuer: "CNCF", year: "Present-2026" },
+  { title: "AWS Certified Solutions Architect (Preparing) ", issuer: "Amazon Web Services", year: "Present-2026" },
+  { title: "Certified Kubernetes Administrator CKA (Preparing) ", issuer: "CNCF", year: "Present-2026" },
 ];
 
 export default function Resume() {

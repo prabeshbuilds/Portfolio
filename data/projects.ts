@@ -13,14 +13,24 @@ export type Project = {
 };
 
 export const projects: Project[] = [
- {
-  title: "Java CI/CD Pipeline",
+{
+  title: "Student Data Record Management System",
   description:
-    "Built and automated a CI/CD pipeline for a Java application using Jenkins, GitHub, Docker, and Nginx. Integrated GitHub webhooks for automated build, testing, Docker image creation, and deployment on AWS EC2 instances with zero-downtime deployment support.",
-  tags: ["Java", "Jenkins","Github", "Docker", "CI/CD", "AWS"],
+    "Designed and deployed a Java-based Student Data Record Management System for managing student information, academic records, and administrative operations. Implemented a complete CI/CD pipeline using Jenkins, GitHub, Docker, and AWS EC2 for automated build, testing, containerization, and deployment. Configured GitHub Webhooks to enable continuous integration and seamless application updates.",
+  tags: [
+    "Java",
+    "Spring Boot",
+    "PostgreSQL",
+    "Jenkins",
+    "GitHub",
+    "Docker",
+    "AWS",
+    "Nginx",
+    "CI/CD"
+  ],
   category: "devops",
   status: "live",
-  statusLabel: "Live · Stable deployments",
+  statusLabel: "Live · Automated CI/CD",
   featured: true,
   accentColor: "bg-green-50",
   demoUrl: "#",

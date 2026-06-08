@@ -213,7 +213,7 @@ export default function Community() {
         </p>
         <h2 className="text-3xl font-bold mb-3">Community participation</h2>
         <p className="text-gray-500 max-w-md mx-auto text-sm leading-relaxed">
-          Open source, developer communities, and student leadership — from
+          Open source, developer communities, and student leadership from
           WordCamp to AWS Cloud Club.
         </p>
       </div>

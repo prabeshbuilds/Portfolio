@@ -51,7 +51,7 @@ export default function Projects() {
         </p>
         <h2 className="text-3xl font-bold mb-3">Things I&apos;ve built</h2>
         <p className="text-gray-500 max-w-md mx-auto text-sm leading-relaxed">
-          DevOps, cloud infrastructure, and automation projects — from CI/CD
+          DevOps, cloud infrastructure, and automation projects from CI/CD
           pipelines to Kubernetes deployments.
         </p>
       </div>
