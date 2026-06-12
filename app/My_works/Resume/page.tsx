@@ -43,7 +43,7 @@ const skills = [
 
 const education = [
   {degree: "+2 Science", institution: "Nepal Higher Seconday School, Chitwan", year: "2020"},
-  { degree: "BCA :- Bachelor in Computer Application", institution: "Tribhuvan University, Kathmandu", year: "2019" },
+  { degree: "BCA :- Bachelor in Computer Application", institution: "Tribhuvan University, Kathmandu", year: "2022" },
 ];
 
 const certifications = [
