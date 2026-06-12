@@ -76,7 +76,25 @@ export default function Resume() {
           <div className="text-sm text-gray-500 space-y-1">
             <p>{contact.email} | {contact.phone}</p>
             <p>{contact.location}</p>
-            <p>{contact.linkedin} | {contact.github}</p>
+            <p>
+              <a
+                href={contact.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                LinkedIn
+              </a>
+              {' '}|{' '}
+              <a
+                href={contact.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                GitHub
+              </a>
+            </p>
           </div>
         </div>
 
