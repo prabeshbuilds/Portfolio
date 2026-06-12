@@ -39,17 +39,20 @@ export const projects: Project[] = [
 {
   title: "AWS Multi-Region Infrastructure with Terraform",
   description:
-    "Provisioned scalable AWS infrastructure using Terraform across multiple regions. The setup includes VPC, public and private subnets, route tables, internet gateway, load balancer, EC2 instances, and auto scaling groups. This project demonstrates Infrastructure as Code (IaC) practices for highly available, fault-tolerant, and production-ready cloud architecture on AWS.",
+    "Provisioned scalable AWS infrastructure using Terraform across multiple AWS regions. The architecture includes VPC, public and private subnets, route tables, internet gateways, Application Load Balancer, EC2 instances, and Auto Scaling Groups. EC2 instances are automatically configured using Terraform user_data to install Docker and Nginx, enabling containerized web application deployment. This project demonstrates Infrastructure as Code (IaC) practices for building highly available, fault-tolerant, and production-ready cloud infrastructure on AWS.",
   tags: [
     "Terraform",
     "AWS",
     "EC2",
     "VPC",
     "Subnet",
+    "Docker",
+    "Nginx",
     "Load Balancer",
     "Auto Scaling",
     "Route Table",
-    "Internet Gateway"
+    "Internet Gateway",
+    "User Data"
   ],
   category: "iac",
   status: "live",

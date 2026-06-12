@@ -18,9 +18,9 @@ const summary = "DevOps & Cloud Engineer with 1+ years of experience designing a
 const experience = [
   {
     role: "DevOps Engineer",
-    company: "Acme it",
+    company: "Acme IT",
     period: "2026 — Present",
-    desc: "Design and maintain scalable cloud infrastructure on AWS using Terraform and Kubernetes. Implement CI/CD pipelines with jenkins, reducing deployment times by 40%. Collaborate with development teams to optimize application performance and reliability.",
+    desc: "Build and manage production-grade cloud infrastructure on AWS using Terraform, Ansible, and Kubernetes. Automate infrastructure provisioning, configuration management, and application deployments through Infrastructure as Code (IaC) practices. Design CI/CD pipelines with Jenkins, implement monitoring and reliability improvements, and collaborate with engineering teams to deliver scalable, secure, and highly available applications."
   },
   {
     role: "WordpressPlugin tester",
